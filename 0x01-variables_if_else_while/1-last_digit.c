@@ -14,7 +14,8 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int lastDigit = n % 10;
+
+	float lastDigit = n % 10;
 
 	if (lastDigit > 5)
 	{
@@ -30,4 +31,3 @@ int main(void)
 	}
 	return (0);
 }
-
