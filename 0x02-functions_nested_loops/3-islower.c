@@ -10,10 +10,10 @@ int _islowerl(int c)
 {
 	if (c > 96 && c < 123)
 	{
-		_putchar('0');
+		return (0);
 	}
 	else
 	{
-		_putchar('1');
+		return (1);
 	}
 }
