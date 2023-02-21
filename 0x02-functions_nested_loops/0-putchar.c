@@ -1,5 +1,4 @@
 #include "main.h"
-/* more headers goes there */
 
 /**
  * main - Entry point.
@@ -19,4 +18,3 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
-
