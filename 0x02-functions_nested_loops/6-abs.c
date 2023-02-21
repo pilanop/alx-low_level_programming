@@ -15,6 +15,7 @@ int _abs(int n)
 	if (n < 0)
 	{
 		int i = n * -1;
+
 		_putchar(i);
 	}
 	else
