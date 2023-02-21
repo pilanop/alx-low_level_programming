@@ -7,7 +7,9 @@
  */
 int main(void)
 {
-	for (char i = '0'; i <= 'f' ; i++)
+	char i;
+	
+	for (i = '0'; i <= 'f' ; i++)
 	{
 		if (i > 57 && i < 97)
 		{
