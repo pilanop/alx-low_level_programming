@@ -33,7 +33,7 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar(result + '0');
 			}
-			else if (result > 9 & result < 100)
+			else if (result > 9 && result < 100)
 			{
 				_putchar(',');
 				_putchar(' ');
