@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * more_numbers - a function that prints 10 times the numbers, from 0 to 14
+ * print_line - a function that draws a straight line in the terminal.
  *
- * Return: Returns void
+ * @n: s the number of times the character _ should be printed
+ *
  */
 void print_line(int n)
 {
