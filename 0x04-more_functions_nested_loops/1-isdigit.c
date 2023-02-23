@@ -6,7 +6,7 @@
  * @c: The number That will be checked if it's a Digit
  *
  * Return: Returns 1 if c is a digit
- * 	   Returns 0 otherwise
+ *         Returns 0 otherwise
  */
 int _isdigit(int c)
 {
