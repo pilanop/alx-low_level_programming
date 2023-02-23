@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isdigit - a function that multiplies two integers.
+ * mul - a function that multiplies two integers.
  *
  * @a: The first coefficient
  * @b: The second coefficient
