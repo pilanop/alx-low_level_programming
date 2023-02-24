@@ -1,31 +1,27 @@
 #include "main.h"
 
 /**
- * print_diagonal - a function that prints a square, followed by a new line.
+ * print_diagonal - printing lines diagonal
+ * @n: input variable
  *
- * @n: is the size of the square
- *
+ * Return: void
  */
+
+
 void print_diagonal(int n)
 {
 	int i, j;
 
-	if (n > 0)
+	if (n <= 0)
+		_putchar('\n');
+	for (i = 0; i < n; i++)
 	{
-		for (i = 0; i < n; i++)
+		for (j = 0; j < i; j++)
 		{
-			for (j = 0; j < n; ++j)
-			{
-				if (i == j)
-					_putchar('\\');
-				else
-					_putchar(' ');
-			}
-			_putchar('\n');
+			_putchar(' ');
 		}
-	}
-	else
-	{
+		_putchar('\\');
 		_putchar('\n');
 	}
+
 }
