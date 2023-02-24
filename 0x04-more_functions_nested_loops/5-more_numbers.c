@@ -1,19 +1,23 @@
 #include "main.h"
 
 /**
- * print_line - a function that draws a straight line in the terminal.
+ * more_numbers - a function that prints an integer.
  *
- * @n: s the number of times the character _ should be printed
- *
+ * Return: void
  */
-void print_line(int n)
-{
-	int i;
 
-	if (n > 0)
+void more_numbers(void)
+{
+
+	int i, j;
+	for (i = 1; i <= 10; i++)
 	{
-		for (i = 0; i < n; i++)
-			_putchar('_');
+		for (j = 0; j <= 14; j++)
+		{
+			if (j >= 10)
+				_putchar('1');
+			_putchar(j % 10 + '0');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
