@@ -22,7 +22,7 @@ char *string_toupper(char *s)
 
 	while (i <= length)
 	{
-		if (s[i] > 97)
+		if (s[i] >= 97)
 		{
 			len = s[i] - 97;
 
