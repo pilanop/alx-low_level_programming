@@ -8,16 +8,34 @@
  */
 char *string_toupper(char *s)
 {
+	int i = 0;
+	int len;
+	char up;
+	int length = 0;
+	int j = 0;
 
-	int i;
-
-	i = 0;
-	while (*(s + i))
+	while (s[j] != '\0')
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
-			*(s + i) -= 'a' - 'A';
-		i++;
+		length++;
+		j++;
+	}
+
+	while (i <= length)
+	{
+		if (s[i] > 97)
+		{
+			len = s[i] - 97;
+
+			up = 65 + len;
+
+			s[i] = up;
+
+			i++;
+		}
+		else
+		{
+			i++;
+		}
 	}
 	return (s);
 }
-/*Bwave ICT */
