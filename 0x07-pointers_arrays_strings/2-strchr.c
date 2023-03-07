@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - a function that locates a character in a string.
+ * _strchr - a function that locates a character in a string.
  *
  * @c: The character to locate in the string
  * @s: The string to search
