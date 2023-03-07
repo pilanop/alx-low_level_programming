@@ -20,10 +20,10 @@ char *_strpbrk(char *s, char *accept)
 		while (*temp != '\0')
 		{
 			if (*s == *temp)
-				return s;
+				return (s);
 			temp++;
 		}
 		s++;
 	}
-	return NULL;
+	return (NULL);
 }
