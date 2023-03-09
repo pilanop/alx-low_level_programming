@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * check - checks if a number is prime recursively
+ * check - checks if a given number is prime
+ *
  * @n: the number to check
  * @i: the divisor
  *
