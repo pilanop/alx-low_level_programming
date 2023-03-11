@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
- * main - a program that adds positive numbers.
+ * main - a program that multiplies two numbers.
  *
  * @argc: argument count
  * @argv: arguments
@@ -14,19 +13,20 @@
 int main(int argc, char *argv[])
 {
 	int i;
+	int j;
 	int sum = 0;
 
 	for (i = 1; i < argc; ++i)
 	{
-		if (isdigit(*argv[i]))
+		for (j = 0; argv[i][j]; j++)
 		{
-			sum += atoi(argv[i]);
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
