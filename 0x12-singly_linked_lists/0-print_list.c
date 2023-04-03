@@ -11,7 +11,7 @@
 size_t print_list(const list_t *h)
 {
 	size_t i = 0;
-	list_t *ptr;
+	const list_t *ptr;
 	ptr = h;
 
 	while (ptr != NULL)
