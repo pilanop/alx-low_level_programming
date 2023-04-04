@@ -24,4 +24,4 @@ void free_listint(listint_t *head);
 void free_listint2(listint_t **head);
 int _putchar(char c);
 
-#endif
+#endif /*LISTS_H*/
